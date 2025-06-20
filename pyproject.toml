@@ -1,0 +1,8 @@
+[project]
+name = "Music_Recommendation_System"
+version = "0.1.0"
+description = "Music Recommendation System using emotion detection ad user activity"
+authors = [
+    {name = "Sahan-Madusanka_Perera", email = "sahanpereraperera@gmail.com"}
+]
+requires-python = ">=3.9"
