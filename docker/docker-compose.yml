@@ -1,0 +1,28 @@
+services:
+  ml-music-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../data:/app/data
+      - ../notebooks:/app/notebooks
+      - ../models:/app/models
+    environment:
+      - PYTHONPATH=/app
+    command: ["streamlit", "run", "app/app.py", "--server.address", "0.0.0.0"]
+
+  jupyter:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../data:/app/data
+      - ../notebooks:/app/notebooks
+      - ../models:/app/models
+    environment:
+      - PYTHONPATH=/app
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=", "--NotebookApp.password="]
