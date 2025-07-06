@@ -1,0 +1,30 @@
+{
+  "dataset_size": 28709,
+  "train_size": 20096,
+  "val_size": 5742,
+  "test_size": 2871,
+  "num_classes": 7,
+  "emotion_labels": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ],
+  "image_size": [
+    48,
+    48
+  ],
+  "batch_size": 32,
+  "label_encoder_classes": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ]
+}
