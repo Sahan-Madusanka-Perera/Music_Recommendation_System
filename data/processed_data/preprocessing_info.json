@@ -13,11 +13,6 @@
     "sad",
     "surprise"
   ],
-  "image_size": [
-    48,
-    48
-  ],
-  "batch_size": 32,
   "label_encoder_classes": [
     "angry",
     "disgust",
@@ -26,5 +21,50 @@
     "neutral",
     "sad",
     "surprise"
-  ]
+  ],
+  "image_size": [
+    48,
+    48
+  ],
+  "batch_size": 32,
+  "dataset_statistics": {
+    "mean": 0.5077388882637024,
+    "std": 0.255076140165329
+  },
+  "class_weights": [
+    1.0266046524047852,
+    9.40661907196045,
+    1.001046061515808,
+    0.5684387683868408,
+    0.8260394334793091,
+    0.849127471446991,
+    1.2933729887008667
+  ],
+  "config": {
+    "dataset_root": "../../data/raw/fer2013/train",
+    "train_dir": "../../data/raw/fer2013/train",
+    "test_dir": "../../data/raw/fer2013/test",
+    "output_dir": "../../data/processed_data",
+    "model_save_dir": "../../models",
+    "image_size": [
+      48,
+      48
+    ],
+    "batch_size": 32,
+    "validation_split": 0.2,
+    "test_split": 0.1,
+    "num_epochs": 50,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 10,
+    "emotion_labels": [
+      "angry",
+      "disgust",
+      "fear",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ]
+  }
 }
