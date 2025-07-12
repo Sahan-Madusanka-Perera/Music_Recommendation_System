@@ -1,0 +1,114 @@
+{
+  "statistics": {
+    "total_samples": 24143,
+    "num_classes": 5,
+    "class_distribution": {
+      "angry": 3983,
+      "happy": 7210,
+      "neutral": 4959,
+      "sad": 4826,
+      "surprise": 3165
+    },
+    "emotions": [
+      "angry",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ]
+  },
+  "class_weights": [
+    1.212302327156067,
+    0.6697087287902832,
+    0.9737043976783752,
+    1.00053870677948,
+    1.5256240367889404
+  ],
+  "normalization": {
+    "mean": 0.5351133942604065,
+    "std": 0.2403390258550644
+  },
+  "config": {
+    "dataset_root": "../../data/raw/fer2013/train",
+    "train_dir": "../../data/raw/fer2013/train",
+    "test_dir": "../../data/raw/fer2013/test",
+    "output_dir": "../../data/processed/FC211033_Sahan",
+    "model_save_dir": "../../models",
+    "image_size": [
+      48,
+      48
+    ],
+    "batch_size": 64,
+    "validation_split": 0.2,
+    "test_split": 0.1,
+    "num_epochs": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 15,
+    "lr_scheduler_patience": 8,
+    "lr_scheduler_factor": 0.5,
+    "original_emotions": [
+      "angry",
+      "disgust",
+      "fear",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "music_emotions": [
+      "angry",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "emotion_to_music": {
+      "happy": [
+        "Pop",
+        "Dance",
+        "Upbeat",
+        "Electronic"
+      ],
+      "sad": [
+        "Blues",
+        "Ballads",
+        "Acoustic",
+        "Melancholic"
+      ],
+      "angry": [
+        "Rock",
+        "Metal",
+        "Punk",
+        "Aggressive"
+      ],
+      "neutral": [
+        "Classical",
+        "Ambient",
+        "Instrumental",
+        "Chill"
+      ],
+      "surprise": [
+        "Experimental",
+        "Fusion",
+        "Eclectic",
+        "Dynamic"
+      ]
+    },
+    "augmentation": {
+      "rotation_degrees": 15,
+      "horizontal_flip_prob": 0.5,
+      "brightness_factor": 0.2,
+      "contrast_factor": 0.2,
+      "translate": [
+        0.1,
+        0.1
+      ],
+      "scale": [
+        0.9,
+        1.1
+      ]
+    }
+  },
+  "processed_location": "../../data/processed/FC211033_Sahan"
+}
