@@ -1,0 +1,102 @@
+{
+  "dataset_info": {
+    "original_emotions": [
+      "angry",
+      "disgust",
+      "fear",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "music_relevant_emotions": [
+      "angry",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "excluded_emotions": [
+      "disgust",
+      "fear"
+    ],
+    "train_distribution": {
+      "angry": 3995,
+      "disgust": 436,
+      "fear": 4097,
+      "happy": 7215,
+      "neutral": 4965,
+      "sad": 4830,
+      "surprise": 3171
+    },
+    "test_distribution": {
+      "angry": 958,
+      "disgust": 111,
+      "fear": 1024,
+      "happy": 1774,
+      "neutral": 1233,
+      "sad": 1247,
+      "surprise": 831
+    },
+    "total_music_relevant": 24176,
+    "total_excluded": 4533,
+    "class_imbalance_ratio": 2.275307473982971
+  },
+  "image_characteristics": {
+    "mean_pixel_intensity": 131.7141848958333,
+    "std_pixel_intensity": 32.75133421265155,
+    "mean_brightness": 0.5165262152777778,
+    "std_brightness": 0.1284366047554963,
+    "mean_contrast": 0.21524716392661872,
+    "std_contrast": 0.05328056902450502
+  },
+  "quality_assessment": {
+    "corrupted_images_count": 0,
+    "size_inconsistencies_count": 0,
+    "very_dark_images_count": 4,
+    "very_bright_images_count": 3,
+    "low_contrast_images_count": 2
+  },
+  "recommendations": {
+    "data_preprocessing": [
+      "Apply histogram equalization to improve contrast in low-contrast images",
+      "Use CLAHE (Contrast Limited Adaptive Histogram Equalization) for better local contrast",
+      "Implement gamma correction for extreme brightness variations",
+      "Apply noise reduction filters to improve image quality"
+    ],
+    "data_augmentation": [
+      "Use rotation (\u00b115 degrees) to increase data diversity",
+      "Apply random horizontal flips (facial expressions are symmetric)",
+      "Implement brightness and contrast adjustments (\u00b120%)",
+      "Add slight translation and affine transformations",
+      "Consider elastic deformations for better generalization"
+    ],
+    "class_balancing": [
+      "Use weighted loss function (imbalance ratio: 2.28)",
+      "Implement oversampling for minority classes (SMOTE or similar)",
+      "Consider focal loss to handle difficult examples",
+      "Use stratified sampling for train/validation splits"
+    ],
+    "model_architecture": [
+      "Use ResNet-18 with modified first layer for grayscale input",
+      "Add dropout layers (0.3-0.5) to prevent overfitting",
+      "Implement batch normalization for stable training",
+      "Use attention mechanisms to focus on facial features",
+      "Consider ensemble methods for better accuracy"
+    ],
+    "training_strategy": [
+      "Use transfer learning with ImageNet pretrained weights",
+      "Implement learning rate scheduling (reduce on plateau)",
+      "Use early stopping to prevent overfitting",
+      "Apply gradient clipping for stable training",
+      "Monitor both accuracy and per-class F1 scores"
+    ],
+    "music_recommendation": [
+      "Map emotions to music genres: Happy\u2192Pop/Dance, Sad\u2192Blues/Ballads, Angry\u2192Rock/Metal",
+      "Consider emotion intensity levels for nuanced recommendations",
+      "Implement temporal emotion tracking for dynamic playlists",
+      "Use confidence scores to handle uncertain predictions"
+    ]
+  },
+  "analysis_date": "2025-07-12T23:11:00.224363"
+}
