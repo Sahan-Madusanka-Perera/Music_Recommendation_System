@@ -1,0 +1,68 @@
+
+ENHANCED EMOTION DETECTION PREPROCESSING REPORT
+==============================================
+
+MUSIC RECOMMENDATION SYSTEM CONFIGURATION
+Target Application: Facial emotion-based music recommendation
+Processing Date: 2025-07-12 23:23:48
+
+DATASET OVERVIEW:
+- Total Images: 24,143
+- Music-Relevant Emotions: 5
+- Excluded Emotions: 2
+- Class Imbalance Ratio: 2.28
+
+DATA SPLITS:
+- Training: 16,900 samples (70.0%)
+- Validation: 4,828 samples (20.0%)
+- Test: 2,415 samples (10.0%)
+
+PREPROCESSING ENHANCEMENTS:
+✓ Quality filtering applied
+✓ CLAHE contrast enhancement
+✓ Advanced data augmentation
+✓ Weighted sampling for class balance
+✓ Stratified data splitting
+
+DATASET STATISTICS:
+- Pixel Mean: 0.5042
+- Pixel Std: 0.2557
+- Image Size: 48x48
+- Batch Size: 64
+
+MODEL ARCHITECTURE:
+- Base: Enhanced ResNet-18
+- Input: Grayscale (1 channel)
+- Attention: Spatial attention module
+- Classifier: Multi-layer with dropout
+- Output: 5 emotion classes
+
+MUSIC EMOTION MAPPING:
+- happy: Pop, Dance, Upbeat, Electronic
+- sad: Blues, Ballads, Acoustic, Melancholic
+- angry: Rock, Metal, Punk, Aggressive
+- neutral: Classical, Ambient, Instrumental, Chill
+- surprise: Experimental, Fusion, Eclectic, Dynamic
+
+TRAINING OPTIMIZATIONS:
+- Loss Function: Focal Loss (handles imbalance)
+- Optimizer: AdamW with weight decay
+- Learning Rate: 0.001 with scheduler
+- Early Stopping: 15 epochs patience
+- Regularization: Dropout + BatchNorm
+
+QUALITY ASSURANCE:
+- Corrupted images filtered
+- Low contrast images enhanced
+- Brightness normalization applied
+- Class distribution balanced
+
+OUTPUT LOCATION: ../../data/processed/FC211033_Sahan
+MODEL SAVE LOCATION: ../../models
+
+NEXT STEPS:
+1. Run training with enhanced configuration
+2. Monitor per-class performance
+3. Evaluate on music recommendation tasks
+4. Fine-tune based on validation results
+    
