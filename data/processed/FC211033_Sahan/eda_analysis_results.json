@@ -1,0 +1,61 @@
+{
+  "dataset_info": {
+    "original_emotions": [
+      "angry",
+      "disgust",
+      "fear",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "music_relevant_emotions": [
+      "angry",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "excluded_emotions": [
+      "disgust",
+      "fear"
+    ],
+    "train_distribution": {
+      "angry": 3995,
+      "disgust": 436,
+      "fear": 4097,
+      "happy": 7215,
+      "neutral": 4965,
+      "sad": 4830,
+      "surprise": 3171
+    },
+    "test_distribution": {
+      "angry": 958,
+      "disgust": 111,
+      "fear": 1024,
+      "happy": 1774,
+      "neutral": 1233,
+      "sad": 1247,
+      "surprise": 831
+    },
+    "total_music_relevant": 24176,
+    "total_excluded": 4533,
+    "class_imbalance_ratio": 2.275307473982971
+  },
+  "image_characteristics": {
+    "mean_pixel_intensity": 130.11985069444447,
+    "std_pixel_intensity": 34.01084421481057,
+    "mean_brightness": 0.510273924291939,
+    "std_brightness": 0.1333758596659238,
+    "mean_contrast": 0.21183660430018303,
+    "std_contrast": 0.05685914391897875
+  },
+  "quality_assessment": {
+    "corrupted_images_count": 0,
+    "size_inconsistencies_count": 0,
+    "very_dark_images_count": 4,
+    "very_bright_images_count": 3,
+    "low_contrast_images_count": 2
+  },
+  "analysis_date": "2025-07-15T00:52:02.874395"
+}
