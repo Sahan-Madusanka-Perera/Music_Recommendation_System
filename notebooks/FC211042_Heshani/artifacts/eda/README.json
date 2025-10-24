@@ -1,0 +1,28 @@
+{
+  "selected_classes": [
+    "angry",
+    "happy",
+    "sad",
+    "surprise",
+    "neutral"
+  ],
+  "dropped_classes": [
+    "fear",
+    "disgust"
+  ],
+  "splits_present": [
+    "test",
+    "train"
+  ],
+  "img_size_preview": 224,
+  "channels_preview": 3,
+  "artifacts": {
+    "index_selected.csv": "image index used for EDA",
+    "class_distribution_counts.csv": "per-split counts",
+    "transform_preview.png": "visual check of MobileNet input",
+    "gray_histograms.png": "intensity distributions",
+    "blur_sample.csv": "only if cv2 available",
+    "class_weights.json": "weights for training",
+    "filename_overlap_train_test.csv": "only if overlaps were found"
+  }
+}
