@@ -1,0 +1,4 @@
+file,prediction,confidence
+face_1762454862_happy.jpg,happy,95.55474
+face_1762454882_sad.jpg,sad,66.80338
+face_1762454926_angry.jpg,angry,48.83669
